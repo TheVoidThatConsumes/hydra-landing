@@ -5,188 +5,518 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles.css">
+    <script src="src/index.js" defer></script>
     <link rel="shortcut icon" href="assets/img/hydra-logo.png" type="image/x-icon">
     <title>Hydra</title>
 </head>
-<body class="bg-body-0 mx-6 snap-y">
-
-<div class="snap-start relative">
-    
-    <img src="assets/img/wavy-xr.png" class="absolute mx-auto -z-10 top-4" alt="">
-
-    <nav class="flex flex-row justify-between items-end h-full w-full mt-4">
-        <div class="flex flex-row items-end gap-2">
-            <img src="assets/img/hydra-logo.png" class="w-10 h-10" alt="">
-            <span class="font-montserrat text-2xl text-neutral-400 font-bold">HYDRA</span>
-        </div>
-
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-10 h-10 text-neutral-400 font-extrabold cursor-pointer rotate-180">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
-            </svg>
-        </div>  
-    </nav>
-
-    <div class="flex flex-col justify-items-center gap-12 mt-6">
-        <img src="assets/img/hero.png" alt="">
-        <h2 class="font-montserrat text-white font-semibold text-center text-3xl drop-shadow-md leading-relaxed"><span class="bg-gradient-to-r from-white to-purple-400 text-transparent bg-clip-text text-4xl font-bold">Dive</span> into the depths <br>of <span class="bg-gradient-to-tr from-purple-400 via-purple-400 to-purple-300 text-transparent bg-clip-text text-4xl font-bold">Virtual Reality</span></h2>
-    </div>
-
-    <button class="flex justify-center w-full bg-gradient-to-tr from-purple-400 to-purple-300 rounded-full mt-8 py-4 font-montserrat font-bold text-body-0 shadow">BUILD YOUR WORLD</button>
-</div>
 
 
+<body class="bg-body-0 h-full scrollbar-hide">
 
-<section class="snap-start">
-    <div class="rounded-full flex flex-row bg-gradient-to-r from-body-0 via-neutral-600 to-body-0 items-center px-4 shadow-md mt-16 mb-20">
+<div class="mx-6 md:mx-12 overflow-clip">
 
-        <span class="border border-white rounded-full p-1">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-              </svg>              
-        </span>
-          
-        <div class="bg-transparent px-6 py-4 font-montserrat font-bold text-neutral-300">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+    <div class="relative">
+        
+        <img src="assets/img/wavy-xr.png" class="absolute mx-auto -z-20 top-4 lg:top-0 lg:-right-10 lg:scale-95 overflow-clip" alt="">
+        <div class="h-screen w-full rounded-tl-3xl rounded-bl-full bg-violet-900 opacity-25 hidden lg:block absolute left-1/4 top-16 -z-30 overflow-clip"></div>
 
-        <div class="bg-transparent px-6 py-4 hidden font-montserrat font-bold text-neutral-300">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae voluptas. </p>
-        </div>
+        <div class="block top-0">
+            <nav class="flex flex-row justify-between items-end h-full w-full mt-4 bg-body-0 bg-opacity-25 z-20 pb-2">
+                <div class="flex flex-row items-end gap-2 lg:w-12 h-12">
+                    <img src="assets/img/hydra-logo.png" class="w-10 h-10" alt="">
+                    <span class="font-montserrat text-2xl text-neutral-400 font-bold">HYDRA</span>
+                </div>
 
-        <div class="bg-transparent px-6 py-4 hidden font-montserrat font-bold text-neutral-300">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae voluptas. </p>
-        </div>
+                <ul class="hidden lg:flex flex-row items-center gap-6">
+                    <li class="font-montserrat text-white text-base">ABOUT</li>
+                    <li class="font-montserrat text-white text-base">SERVICES</li>
+                    <li class="font-montserrat text-white text-base">TECHNOLOGIES</li>
+                    <li class="font-montserrat text-white text-base">HOW TO</li>
+                </ul>
 
-        <span class="border border-white rounded-full p-1">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>              
-        </span>
-          
-    </div>
-</section>
+                <span class="hidden lg:flex flex-row items-center gap-3">
+                    <button class="flex items-center justify-center rounded-full px-6 py-3 font-montserrat bg-transparent border border-white text-white text-sm font-medium">CONTACT US</button>
+                    <button class="flex items-center justify-center rounded-full px-6 py-3 font-montserrat bg-neutral-400 border border-neutral-400 text-body-0 text-sm font-semibold">JOIN HYDRA</button>
+                </span>
 
+                <div class="block lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-10 h-10 text-neutral-400 font-extrabold cursor-pointer rotate-180">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                    </svg>
+                </div>  
+            </nav>
 
+            <div class="flex flex-col lg:flex-row-reverse lg:w-full lg:h-screen justify-items-center lg:justify-between lg:align-middle lg:items-center gap-12 lg:gap-4 mt-16 lg:mt-0">
+                <img src="assets/img/hero.png" alt="" class="lg:h-4/6">
+                <div class="flex flex-col space-y-8 items-start">
+                    <h2 class="font-montserrat text-white font-semibold text-center lg:text-left text-3xl drop-shadow-md leading-relaxed"><span class="bg-gradient-to-r from-white to-purple-400 text-transparent bg-clip-text text-4xl font-bold">Dive</span> into the depths<br>of <span class="bg-gradient-to-tr from-purple-400 via-purple-400 to-purple-300 text-transparent bg-clip-text text-4xl font-bold">Virtual Reality</span></h2>
+                    <p class="font-montserrat text-neutral-400 hidden lg:block lg:mr-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore 
+                        nisl tincidunt eget. Lectus mauris eros in vitae .
+                    </p>
 
-<section class="min-h-screen snap-start">
-    <div class="container flex-col justify-items-center space-y-8 mb-8">
-        <h1 class="uppercase text-center font-montserrat text-white text-3xl"><span class="font-bold mb-1">Introduction <br></span> to Hydra VR</h1>
-        <img src="assets/img/about.png" alt="">
-        <p class="font-montserrat text-neutral-300">Eget mi proin sed libero enim sed faucibus turpis. Nisl 
-            rhoncus mattis rhoncus urna neque viverra justo. Vivamus 
-            at augue eget arcu dictum. Ultrices gravida dictum fusce 
-            ut placerat orci. Aenean et tortor at risus viverra adipisci
-            ng at in. Mattis aliquam faucibus purus in massa. Est 
-            placerat in egestas erat imperdiet sed. Consequat sem
-            per viverra nam libero justo laoreet sit amet. Aliquam 
-            etiam erat velit scelerisque in dictum non consectetur 
-            a. Laoreet sit amet cursus sit amet. Vel eros donec ac 
-            odio tempor orci dapibus.
-        </p>
-
-        <button class="flex justify-center bg-gradient-to-r from-body-0 via-purple-400 to-purple-300 text-body-0 font-montserrat w-10/12 py-4 rounded-full font-bold shadow mx-auto">LET'S GET IN TOUCH</button>
-    </div>
-</section>
-
-
-
-<section class="mt-16">
-
-    <h1 class="uppercase text-center font-montserrat text-white text-3xl space-y-2"><span class="font-bold mb-1">Why Build <br></span>with Hydra?</h1>
-
-    <div class="container relative">
-
-        <div class="flex flex-row justify-between align-middle top-56">
-            <span class="border-2 border-white rounded-full p-1">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                </svg>              
-            </span>
-            
-            <span class="border-2 border-white rounded-full p-1 -ml-2 self-end">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>              
-            </span>
-        </div>
-
-        <div class="mt-2 mb-8 bg-gradient-to-b from-body-0 via-purple-500 to-body-0 align-middle">
-            <div class="flex flex-col space-y-5 bg-transparent container p-6">
-                <img src="assets/img/why-1.png" alt="" class="rounded-full border-b-8 border-t-8 border-r-8 border-l-8 border-body-0 mt-4">
-                <h1 class="font-montserrat font-bold text-lg text-white text-center">SIMULATION</h1>
-                <hr class="w-6/12 mx-auto text-white">
-                <p class="font-montserrat text-neutral-200 text-sm">Vitae sapien pellentesque habitant morbi
-                    nunc. Viverra aliquet  porttitor rhoncus 
-                    libero justo laoreet sit amet vitae.
-                </p>
-
-                <button class="flex justify-center bg-gradient-to-r from-body-0 via-purple-400 to-purple-300 text-body-0 font-montserrat w-full py-4 rounded-full font-bold shadow mx-auto mb-4">TRY IT NOW</button>
+                    <button class="flex justify-center w-full lg:w-6/12 bg-gradient-to-tr from-purple-400 to-purple-300 rounded-full py-4 font-montserrat font-bold text-body-0 shadow mt-8 lg:mt-12">BUILD YOUR WORLD</button>
+                </div>
             </div>
         </div>
 
     </div>
 
-</section>
 
 
+    <section>
+        <div class="rounded-full w-full flex flex-row justify-center items-center bg-gradient-to-r from-body-0 via-neutral-600 bg-opacity-5 to-body-0 px-4 py-2 shadow-md mt-16 mb-20">
 
-<section class="snap-center">
-    <div class="rounded-xl bg-[url('../assets/img/tech.png')] bg-no-repeat bg-cover bg-center mt-12 mb-8 px-2 py-8">
-        <h1 class="uppercase text-center font-montserrat text-white space-y-5"><span class="font-bold mb-1">Technologies and Hardware <br></span>used by Hydra VR</h1>
-    </div>
+            <span class="border border-white rounded-full p-1 lg:hidden items-end">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>              
+            </span>
+            
+
+            <div class="divide-x flex flex-row justify-between gap-24">
+                <div class="flex flex-row gap-2 bg-transparent px-6 py-4 items-center w-full h-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                    </svg>
+                    
+                    <span class="font-montserrat text-white flex flex-col gap-1.5">
+                        <h3 class="font-montserrat text-white font-semibold hidden lg:block">Pay Us a Visit</h3>
+                        <p class="font-montserrat text-white text-sm">1, Hacker Way, Seattle NY.</p>
+                    </span>
+                </div>
     
-    <div class="flex flex-row justify-evenly items-center mt-6">
-        <span class="border-4 border-body-0 shadow-lg shadow-neutral-800 rounded-full p-1">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-            </svg>              
-        </span>
+    
+                <div class="hidden lg:flex flex-row gap-2 bg-transparent px-6 py-4 items-center w-full h-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                      
+                    <span class="font-montserrat text-white flex flex-col gap-1.5">
+                        <h3 class="font-montserrat text-white font-semibold hidden lg:block">Give Us a Call</h3>
+                        <p class="font-montserrat text-white text-sm">+234 (81) 123-456</p>
+                    </span>
+                </div>
+    
+    
+                <div class="hidden lg:flex flex-row gap-2 bg-transparent px-6 py-4 items-center w-full h-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg> 
+                    
+                    <span class="font-montserrat text-white flex flex-col gap-1.5">
+                        <h3 class="font-montserrat text-white font-semibold hidden lg:block">Send Us a Message</h3>
+                        <p class="font-montserrat text-white text-sm">contact@hydratech.com</p>
+                    </span>
+                </div>
+            </div>
 
-        <div>
-            <span><img src="assets/img/Hydra-Tech1.png" alt="" class=" scale-75"></span>
-            <span><img src="assets/img/Hydra-Tech2.png" alt="" class="hidden scale-75"></span>
-            <span><img src="assets/img/Hydra-Tech3.png" alt="" class="hidden scale-75"></span>
-            <span><img src="assets/img/Hydra-Tech4.png" alt="" class="hidden scale-75"></span>
-        </div>
 
-        <span class="border-4 border-body-0 shadow-lg shadow-neutral-800 rounded-full p-1">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-            </svg>              
-        </span>
-    </div>
-
-
-    <h1 class="uppercase text-center font-montserrat text-white text-2xl space-y-2 mt-12 mb-6"><span class="font-bold mb-1">How We Build <br></span>with Hydra VR?</h1>
-    <div class="flex flex-row justify-evenly items-end mt-3 mb-12 gap-4">
-        <span class="border-4 border-body-0 shadow-lg shadow-neutral-800 rounded-full p-1">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-            </svg>              
-        </span>
-
-        <div class="flex flex-col align-middle gap-4">
-                <span class="bg-gradient-to-r from-purple-400 to-purple-200 rounded-full py-20 font-montserrat text-6xl text-center text-body-0 font-bold">1</span>
-            
-
-            <h2 class="font-montserrat font-semibold text-white text-center mt-4 text-2xl">3D Conception and Design</h2>
+            <span class="border border-white rounded-full p-1 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>              
+            </span>
             
         </div>
-
-        <span class="border-4 border-body-0 shadow-lg shadow-neutral-800 rounded-full p-1">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-            </svg>              
-        </span>
-    </div>
-</section>
+    </section>
 
 
 
-<section>
+    <section>
+        <div class="flex-col justify-items-center space-y-12 gap-8">
+            <div class="flex flex-col items-center lg:flex-row lg:justify-between lg:gap-56 lg:mb-28">
+                <span class="flex flex-col lg:flex-row lg:items-end">
+                    <h1 class="uppercase text-center font-montserrat text-white text-3xl"><span class="font-bold mb-1">Introduction <br></span> to Hydra VR</h1>
 
-</section>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-32 h-12 text-white hidden lg:inline-block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>                  
+                </span>
+                
+                <p class="hidden lg:block font-montserrat text-white">
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+                    nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+                    quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+                    lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+                </p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row lg:justify-between items-center lg:gap-16 relative">
+                <img src="assets/img/wavy-xxr.png" alt="" class="hidden lg:block absolute w-full mx-auto -z-10">
+                <img src="assets/img/about.png" alt="">
+
+                <div class="flex flex-col space-y-12">
+                    <h1 class="font-montserrat text-2xl hidden lg:block text-white"><span class="font-bold">ABOUT</span><br>HYDRA VR</h1>
+
+                    <p class="font-montserrat text-neutral-300">Eget mi proin sed libero enim sed faucibus turpis. Nisl 
+                        rhoncus mattis rhoncus urna neque viverra justo. Vivamus 
+                        at augue eget arcu dictum. Ultrices gravida dictum fusce 
+                        ut placerat orci. Aenean et tortor at risus viverra adipisci
+                        ng at in. Mattis aliquam faucibus purus in massa. Est 
+                        placerat in egestas erat imperdiet sed. Consequat sem
+                        per viverra nam libero justo laoreet sit amet. Aliquam 
+                        etiam erat velit scelerisque in dictum non consectetur 
+                        a. Laoreet sit amet cursus sit amet. Vel eros donec ac 
+                        odio tempor orci dapibus.
+                    </p>
+    
+                    <button class="flex justify-center bg-gradient-to-r from-body-0 via-purple-400 to-purple-300 text-body-0 font-montserrat w-10/12 lg:w-6/12 py-4 rounded-full font-bold shadow mx-auto lg:mx-0">LET'S GET IN TOUCH</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="flex flex-col items-center lg:flex-row lg:justify-between lg:gap-56 mt-20 mb-10 lg:my-28">
+            <span class="flex flex-col lg:flex-row lg:items-end w-full">
+                <h1 class="uppercase text-center font-montserrat text-white text-3xl"><span class="font-bold mb-1">WHY BUILD <br></span>WITH HYDRA?</h1>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-32 h-12 text-white hidden lg:inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                </svg>                  
+            </span>
+            
+            <p class="hidden lg:block font-montserrat text-white">
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+                nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+                quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+                lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+            </p>
+        </div>
+
+
+
+        <div class="container flex flex-row items-center gap-6 relative">
+
+            <span class="border-2 border-white rounded-full p-1 absolute lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>              
+            </span>
+                
+               
+            <div class=" mb-8 bg-gradient-to-b from-body-0 via-purple-500 to-body-0 align-middle rounded-3xl shadow">
+                <div class="flex flex-col space-y-5 bg-transparent container p-8">
+                    <img src="assets/img/why-1.png" alt="" class="rounded-full border-b-8 border-t-8 border-r-8 border-l-8 border-body-0">
+                    <h1 class="font-montserrat font-bold text-lg text-white text-center">SIMULATION</h1>
+                    <hr class="w-6/12 mx-auto text-white">
+                    <p class="font-montserrat text-neutral-200 text-sm">Vitae sapien pellentesque habitant morbi
+                        nunc. Viverra aliquet  porttitor rhoncus 
+                        libero justo laoreet sit amet vitae.
+                    </p>
+
+                    <button class="flex justify-center bg-gradient-to-r from-body-0 via-purple-400 to-purple-300 text-body-0 font-montserrat w-full py-4 rounded-full font-bold shadow mx-auto mb-4">TRY IT NOW</button>
+                </div>
+            </div>
+
+            <div class=" mb-8 bg-gradient-to-b from-body-0 via-purple-500 to-body-0 align-middle rounded-3xl shadow hidden lg:block">
+                <div class="flex flex-col space-y-5 bg-transparent container p-8">
+                    <img src="assets/img/why-2.png" alt="" class="rounded-full border-b-8 border-t-8 border-r-8 border-l-8 border-body-0">
+                    <h1 class="font-montserrat font-bold text-lg text-white text-center">EDUCATION</h1>
+                    <hr class="w-6/12 mx-auto text-white">
+                    <p class="font-montserrat text-neutral-200 text-sm">Vitae sapien pellentesque habitant morbi
+                        nunc. Viverra aliquet  porttitor rhoncus 
+                        libero justo laoreet sit amet vitae.
+                    </p>
+
+                    <button class="flex justify-center bg-gradient-to-r from-body-0 via-purple-400 to-purple-300 text-body-0 font-montserrat w-full py-4 rounded-full font-bold shadow mx-auto mb-4">TRY IT NOW</button>
+                </div>
+            </div>
+
+            <div class=" mb-8 bg-gradient-to-b from-body-0 via-purple-500 to-body-0 align-middle rounded-3xl shadow hidden lg:block">
+                <div class="flex flex-col space-y-5 bg-transparent container p-8">
+                    <img src="assets/img/why-3.png" alt="" class="rounded-full border-b-8 border-t-8 border-r-8 border-l-8 border-body-0">
+                    <h1 class="font-montserrat font-bold text-lg text-white text-center">SELF CARE</h1>
+                    <hr class="w-6/12 mx-auto text-white">
+                    <p class="font-montserrat text-neutral-200 text-sm">Vitae sapien pellentesque habitant morbi
+                        nunc. Viverra aliquet  porttitor rhoncus 
+                        libero justo laoreet sit amet vitae.
+                    </p>
+
+                    <button class="flex justify-center bg-gradient-to-r from-body-0 via-purple-400 to-purple-300 text-body-0 font-montserrat w-full py-4 rounded-full font-bold shadow mx-auto mb-4">TRY IT NOW</button>
+                </div>
+            </div>
+
+            <div class=" mb-8 bg-gradient-to-b from-body-0 via-purple-500 to-body-0 align-middle rounded-3xl shadow hidden lg:block">
+                <div class="flex flex-col space-y-5 bg-transparent container p-8">
+                    <img src="assets/img/why-4.png" alt="" class="rounded-full border-b-8 border-t-8 border-r-8 border-l-8 border-body-0">
+                    <h1 class="font-montserrat font-bold text-lg text-white text-center">OUTDOOR</h1>
+                    <hr class="w-6/12 mx-auto text-white">
+                    <p class="font-montserrat text-neutral-200 text-sm">Vitae sapien pellentesque habitant morbi
+                        nunc. Viverra aliquet  porttitor rhoncus 
+                        libero justo laoreet sit amet vitae.
+                    </p>
+
+                    <button class="flex justify-center bg-gradient-to-r from-body-0 via-purple-400 to-purple-300 text-body-0 font-montserrat w-full py-4 rounded-full font-bold shadow mx-auto mb-4">TRY IT NOW</button>
+                </div>
+            </div>  
+            
+            
+            <span class="border-2 border-white rounded-full p-1 absolute right-0 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>              
+            </span>
+
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="flex justify-center items-center rounded-full bg-[url('../assets/img/tech.png')] h-24 lg:h-48 bg-no-repeat bg-cover bg-center mt-12 mb-8 px-2 py-8 snap-start relative">
+            <h1 class="uppercase text-center lg:text-2xl font-montserrat text-white space-y-5"><span class="font-bold mb-1">Technologies and Hardware <br></span>used by Hydra VR</h1>
+            <div class="absolute -bottom-5 mx-auto z-10 hidden lg:flex items-center justify-center w-10 h-10 rounded-full bg-neutral-400 border-8 border-black border-opacity-60">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-body-0 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>                  
+            </div>
+        </div>
+        
+        <div class="flex flex-row justify-evenly items-center mt-6 mb-16 lg:mb-8">
+            <span class="border-4 border-body-0 shadow-lg shadow-neutral-800 rounded-full p-1 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>              
+            </span>
+
+            <div class="block lg:flex lg:flex-row lg:items-center lg:justify-evenly lg:gap-36">
+                <span><img src="assets/img/Hydra-Tech1.png" alt="" class=" scale-75"></span>
+                <span><img src="assets/img/Hydra-Tech2.png" alt="" class="hidden scale-75 lg:block"></span>
+                <span><img src="assets/img/Hydra-Tech3.png" alt="" class="hidden scale-75 lg:block"></span>
+                <span><img src="assets/img/Hydra-Tech4.png" alt="" class="hidden scale-75 lg:block"></span>
+            </div>
+
+            <span class="border-4 border-body-0 shadow-lg shadow-neutral-800 rounded-full p-1 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>              
+            </span>
+        </div>
+
+        
+
+        <div class="block lg:flex flex-row justify-between gap-56 mb-7 lg:mb-28">
+            <span class="flex flex-row items-end w-full">
+                <h1 class="uppercase font-montserrat text-center text-white text-3xl"><span class="font-bold mb-1">How We Build </span>with Hydra VR?</h1>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-32 h-12 text-white hidden lg:inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                </svg>                  
+            </span>
+            
+            <p class="hidden lg:block font-montserrat text-white">
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+                nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+                quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+                lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+            </p>
+        </div>
+        
+        <div class="flex flex-row justify-center items-end mt-3 mb-12 relative">
+            <img src="assets/img/wavy.png" alt="" class="hidden lg:block absolute -z-10 top-6 mx-auto w-full">
+
+            <span class="border-4 border-body-0 shadow-lg shadow-neutral-800 rounded-full p-1 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>              
+            </span>
+
+            <div class="block lg:flex lg:flex-row lg:justify-evenly mx-auto lg:gap-12 w-full">
+                <div class="flex flex-col justify-items-center items-center gap-4">
+                    <div class="w-52 h-52 rounded-full flex items-center justify-center bg-black bg-opacity-25 shadow-xl">
+                        <div class="w-48 h-48 lg:w-36 lg:h-36 rounded-full flex items-center justify-center bg-gradient-to-r from-purple-400 via-purple-300 to-purple-200 shadow-inner">
+                            <h1 class="font-montserrat font-semibold text-6xl text-body-0">1</h1>
+                        </div>
+                    </div>
+                
+                    <span class="flex flex-row items-start gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white mt-0.5 hidden lg:inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                        </svg>
+                          
+                        <h2 class="font-montserrat text-white text-center lg:text-left text-2xl">3D Conception <br>& Design</h2>
+                    </span>
+                </div>
+
+                <div class="hidden lg:flex flex-col justify-items-center items-center gap-4">
+                    <div class="w-52 h-52 rounded-full flex items-center justify-center bg-black bg-opacity-25 shadow-xl">
+                        <div class="w-48 h-48 lg:w-36 lg:h-36 rounded-full flex items-center justify-center bg-gradient-to-r from-purple-400 via-purple-300 to-purple-200 shadow-inner">
+                            <h1 class="font-montserrat font-semibold text-6xl text-body-0">2</h1>
+                        </div>
+                    </div>
+                
+                    <span class="flex flex-row items-start gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white mt-0.5 hidden lg:inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                        </svg>
+                          
+                        <h2 class="font-montserrat text-white text-center lg:text-left text-2xl">Interaction <br>Design</h2>
+                    </span>
+                </div>
+
+                <div class="hidden lg:flex flex-col justify-items-center items-center gap-4">
+                    <div class="w-52 h-52 rounded-full flex items-center justify-center bg-black bg-opacity-25 shadow-xl">
+                        <div class="w-48 h-48 lg:w-36 lg:h-36 rounded-full flex items-center justify-center bg-gradient-to-r from-purple-400 via-purple-300 to-purple-200 shadow-inner">
+                            <h1 class="font-montserrat font-semibold text-6xl text-body-0">3</h1>
+                        </div>
+                    </div>
+                
+                    <span class="flex flex-row items-start gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white mt-0.5 hidden lg:inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                        </svg>
+                          
+                        <h2 class="font-montserrat text-white text-center lg:text-left text-2xl">VR World <br>User Testing</h2>
+                    </span>
+                </div>
+
+                <div class="hidden lg:flex flex-col justify-items-center items-center gap-4">
+                    <div class="w-52 h-52 rounded-full flex items-center justify-center bg-black bg-opacity-25 shadow-xl">
+                        <div class="w-48 h-48 lg:w-36 lg:h-36 rounded-full flex items-center justify-center bg-gradient-to-r from-purple-400 via-purple-300 to-purple-200 shadow-inner">
+                            <h1 class="font-montserrat font-semibold text-6xl text-body-0">4</h1>
+                        </div>
+                    </div>
+                
+                    <span class="flex flex-row items-start gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white mt-0.5 hidden lg:inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                        </svg>
+                          
+                        <h2 class="font-montserrat text-white text-center lg:text-left text-2xl">Hydra VR <br>Deploy</h2>
+                    </span>
+                </div>
+            </div>
+
+            <span class="border-4 border-body-0 shadow-lg shadow-neutral-800 rounded-full p-1 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>              
+            </span>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="bg-gradient-to-b from-body-0 via-neutral-800 to-body-0 snap-start px-4 py-8 rounded-3xl mt-24 mb-12 shadow">
+            <div class="flex flex-col items-center justify-items-center space-y-3">
+                <h2 class="font-bold tracking-wide font-montserrat text-white text-2xl">JOIN HYDRA</h2>
+                <hr class="w-5/12 border-white">
+                <h2 class="font-montserrat text-2xl text-center text-white font-light">Let's Build Your VR Experience</h2>
+            </div>
+
+    
+            <form action="">
+                <div class="flex flex-col space-y-4 font-montserrat mx-4 mt-12">
+                    <span class="flex flex-col lg:flex-row justify-evenly gap-4">
+                        <input id="input" type="text" name="firstName" id="firstName" placeholder="First Name" class="w-full rounded-full bg-transparent border-2 border-white px-4 py-2 placeholder-white">
+                        <input id="input" type="text" name="lastName" id="lastName" placeholder="Last Name" class="w-full rounded-full bg-transparent border-2 border-white px-4 py-2 placeholder-white">
+                    </span>
+                    
+                    <span class="flex flex-col lg:flex-row justify-evenly gap-4">
+                        <input id="input" type="email" name="email" id="email" placeholder="Email" class="w-full rounded-full bg-transparent border-2 border-white px-4 py-2 placeholder-white">
+                        <input id="input" type="number" name="phoneNum" id="phoneNum" placeholder="Phone Number" class="w-full rounded-full bg-transparent border-2 border-white px-4 py-2 placeholder-white">
+                    </span>
+                    
+                    <span class="flex flex-col space-y-4">
+                        <input id="input" type="text" name="subject" id="subject" placeholder="Subject" class="w-full rounded-full bg-transparent border-2 border-white px-4 py-2 placeholder-white">
+                        <textarea id="input" name="" id="" cols="30" rows="10" placeholder="Tell Us Something..." class="w-full rounded-3xl bg-transparent border-2 border-white px-4 py-2 placeholder-white"></textarea>
+                        <button type="submit" class="flex justify-center bg-gradient-to-r from-body-0 via-purple-400 to-purple-300 text-body-0 font-montserrat w-full lg:w-2/12 py-4 rounded-full font-bold shadow-md mx-auto mb-4">SEND TO HYDRA</button>
+                    </span>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="flex flex-col">
+            
+
+            <div class=" flex flex-col justify-center lg:flex-row lg:justify-evenly lg:gap-24 lg:align-middle overflow-y-hidden items-center relative">
+                <img src="assets/img/wavy.png" alt="" class="-z-10 hidden lg:block absolute w-full scale-90 mx-auto opacity-10">
+
+
+
+                <div class="flex flex-col items-center lg:order-1">
+                    <img src="assets/img/hydra-logo.png" alt="" class="scale-95 lg:scale-150 mt-8 lg:mb-8">
+                </div>
+
+    
+                <div class="hidden lg:flex lg:flex-col justify-items-center lg:order-3 h-full">
+                    <ul class="font-montserrat text-white space-y-2 font-bold">
+                        <li>ABOUT</li>
+                        <li>SERVICES</li>
+                        <li>TECHNOLOGIES</li>
+                        <li>HOW TO</li>
+                        <li>JOIN HYDRA</li>
+                    </ul>
+                </div>
+                    
+    
+                <div class="hidden lg:flex lg:flex-col lg:items-center lg:order-3">
+                    <ul class="font-montserrat text-white space-y-2 font-bold">
+                        <li>FAQ</li>
+                        <li>SITEMAP</li>
+                        <li>CONDITONS</li>
+                        <li>LICENSES</li>
+                    </ul>
+                </div>
+                    
+                
+                <div class="flex flex-col justify-center items-center gap-8 lg:order-4">
+    
+                    <h3 class="mt-6 lg:mt-0 font-montserrat text-white text-xl font-bold">SOCIALIZE WITH HYDRA</h3>
+    
+                    <span class="flex flex-row gap-4 items-center">
+                        <div class="flex items-center justify-center rounded-full w-10 h-10 bg-neutral-400">
+                            <svg class="w-6 h-6 text-body-0" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/> </svg>
+                        </div>
+    
+                        <div class="flex items-center justify-center rounded-full w-10 h-10 bg-neutral-400">
+                            <svg class="w-6 h-6 text-body-0" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"> <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/> </svg>
+                        </div>
+    
+                        <div class="flex items-center justify-center rounded-full w-10 h-10 bg-neutral-400">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="#302C42" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                        </div>
+    
+                        <div class="flex items-center justify-center rounded-full w-10 h-10 bg-neutral-400">
+                            <svg class="w-6 h-6 text-body-0" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/> </svg>
+                        </div>
+    
+                        <div class="flex items-center justify-center rounded-full w-10 h-10 bg-neutral-400">
+                            <svg class="w-6 h-6 text-body-0" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/> </svg>
+                        </div>
+    
+                        <div class="flex items-center justify-center rounded-full w-10 h-10 bg-neutral-400">
+                            <svg class="w-6 h-6 text-body-0" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16"> <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/> </svg>
+                        </div>
+                    </span>
+    
+                    <button type="submit" class="scale-90 lg:scale-100 flex items-center justify-center bg-gradient-to-r from-body-0 via-purple-400 to-purple-300 text-body-0 font-montserrat px-16 py-4 rounded-full font-bold shadow-md mx-6 mb-4 mt-2">BUILD YOUR WORLD</button>
+                </div>
+            </div>
+ 
+
+        <div class="flex flex-col w-full items-center relative bottom-1">
+            <hr class="border-neutral-400 w-11/12 mx-auto mt-3 mb-1">
+            <h2 class="font-montserrat lg:font-semibold text-white my-2">2023 &copy; HYDRA VR by Anansi.dev</h2>
+        </div>
+
+    </section>
+
+    
+
+</div>
 
 </body>
+
 </html>

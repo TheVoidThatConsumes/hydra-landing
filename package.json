@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/TheVoidThatConsumes/hydra-landing/issues"
   },
-  "homepage": "https://github.com/TheVoidThatConsumes/hydra-landing#readme"
+  "homepage": "https://github.com/TheVoidThatConsumes/hydra-landing#readme",
+  "dependencies": {
+    "tailwind-scrollbar-hide": "^1.1.7"
+  }
 }
