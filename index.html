@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles.css">
-    <script src="src/index.js"></script>
+    <script src="src/index.js" defer></script>
     <link rel="shortcut icon" href="assets/img/hydra-logo.png" type="image/x-icon">
     <title>Hydra</title>
 </head>
@@ -28,19 +28,19 @@
                 </div>
 
                 <ul class="hidden lg:flex flex-row items-center gap-6">
-                    <li class="font-montserrat text-white text-base hover:border-b-2 hover:text-lg border-neutral-400 duration-100 ease-in-out">ABOUT</li>
-                    <li class="font-montserrat text-white text-base hover:border-b-2 hover:text-lg border-neutral-400 duration-100 ease-in-out">SERVICES</li>
-                    <li class="font-montserrat text-white text-base hover:border-b-2 hover:text-lg border-neutral-400 duration-100 ease-in-out">TECHNOLOGIES</li>
-                    <li class="font-montserrat text-white text-base hover:border-b-2 hover:text-lg border-neutral-400 duration-100 ease-in-out">HOW TO</li>
+                    <li class="font-montserrat text-white text-base hover:border-b-2 hover:text-lg border-neutral-400 duration-100 ease-in-out"><a href="#about">ABOUT</a></li>
+                    <li class="font-montserrat text-white text-base hover:border-b-2 hover:text-lg border-neutral-400 duration-100 ease-in-out"><a href="#services">SERVICES</a></li>
+                    <li class="font-montserrat text-white text-base hover:border-b-2 hover:text-lg border-neutral-400 duration-100 ease-in-out"><a href="#tech">TECHNOLOGIES</a></li>
+                    <li class="font-montserrat text-white text-base hover:border-b-2 hover:text-lg border-neutral-400 duration-100 ease-in-out"><a href="#how">HOW TO</a></li>
                 </ul>
 
                 <span class="hidden lg:flex flex-row items-center gap-3">
-                    <button class="flex items-center justify-center rounded-full px-6 py-3 font-montserrat bg-transparent border border-white text-white text-sm font-medium hover:bg-neutral-400 hover:text-body-0 hover:font-semibold duration-300 ease-in-out peer">CONTACT US</button>
-                    <button class="flex items-center justify-center rounded-full px-6 py-3 font-montserrat bg-neutral-400 border border-neutral-400 text-body-0 text-sm font-semibold hover:bg-transparent hover:animate-pulse hover:text-neutral-400 hover:font-semibold duration-300 ease-in-out peer-hover:bg-transparent peer-hover:text-neutral-400">JOIN HYDRA</button>
+                    <button class="flex items-center justify-center rounded-full px-6 py-3 font-montserrat bg-transparent border border-white text-white text-sm font-medium hover:bg-neutral-400 hover:text-body-0 hover:font-semibold duration-300 ease-in-out peer"><a href="#contact">CONTACT US</a></button>
+                    <button class="flex items-center justify-center rounded-full px-6 py-3 font-montserrat bg-neutral-400 border border-neutral-400 text-body-0 text-sm font-semibold hover:bg-transparent hover:animate-pulse hover:text-neutral-400 hover:font-semibold duration-300 ease-in-out peer-hover:bg-transparent peer-hover:text-neutral-400"><a href="join">JOIN HYDRA</a></button>
                 </span>
 
                 <div class="block lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-10 h-10 text-neutral-400 font-extrabold cursor-pointer rotate-180">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-10 h-10 text-neutral-400 font-extrabold cursor-pointer rotate-180" onclick="showMenu()">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
                     </svg>
                 </div>  
@@ -58,6 +58,29 @@
                     <button class="flex justify-center w-full lg:w-6/12 bg-gradient-to-tr from-purple-400 to-purple-300 rounded-full py-4 font-montserrat font-bold text-body-0 shadow mt-8 lg:mt-12 hover:scale-95 hover:shadow-lg ease-in-out duration-300">BUILD YOUR WORLD</button>
                 </div>
             </div>
+        </div>
+
+                    <!--Navbar hidden-->
+        <div class="opacity-0 w-0 h-0 fixed top-0 bg-gradient-to-r from-body-0 via-black to-black self-stretch z-10 flex flex-col -ml-6 overflow-x-clip" id="burger">
+            <h1 class="text-5xl text-neutral-400 ml-6 mt-4 self-start font-semibold cursor-pointer" onclick="hideMenu()">&times;</h1>
+
+            <div class="flex flex-col items-center gap-2 lg:w-12 h-12 mt-8">
+                <img src="assets/img/hydra-logo.png" class="w-10 h-10" alt="">
+                <span class="font-montserrat text-2xl text-neutral-400 font-bold">HYDRA</span>
+            </div>
+            
+            <div class="mt-20 flex flex-col">
+                <ul class="flex flex-col gap-6 text-neutral-400 mx-6">
+                    <li class="font-montserrat text-white text-base hover:border-b-2 hover:text-lg border-neutral-400 duration-100 ease-in-out" onclick="hideMenu()"><a href="#about">ABOUT</a></li>
+                    <li class="font-montserrat text-white text-base hover:border-b-2 hover:text-lg border-neutral-400 duration-100 ease-in-out" onclick="hideMenu()"><a href="#services">SERVICES</a></li>
+                    <li class="font-montserrat text-white text-base hover:border-b-2 hover:text-lg border-neutral-400 duration-100 ease-in-out" onclick="hideMenu()"><a href="#tech">TECHNOLOGIES</a></li>
+                    <li class="font-montserrat text-white text-base hover:border-b-2 hover:text-lg border-neutral-400 duration-100 ease-in-out" onclick="hideMenu()"><a href="#how">HOW TO</a></li>
+                    <li class="font-montserrat text-white text-base hover:border-b-2 hover:text-lg border-neutral-400 duration-100 ease-in-out" onclick="hideMenu()"><a href="#contact">CONTACT US</a></li>
+                    <li class="font-montserrat text-white text-base hover:border-b-2 hover:text-xl border-neutral-400 duration-100 ease-in-out" onclick="hideMenu()"><a href="join">JOIN HYDRA &rightarrow;</a></li>
+                </ul>
+            </div>
+
+            <span class="absolute bottom-1 flex flex-row self-center font-mono text-neutral-500">Powered by Anansi.dev, 2023.</span>
         </div>
 
     </div>
@@ -124,7 +147,7 @@
 
 
 
-    <section>
+    <section id="about">
         <div class="flex-col justify-items-center space-y-12 gap-8">
             <div class="flex flex-col items-center lg:flex-row lg:justify-between lg:gap-56 lg:mb-28">
                 <span class="flex flex-col lg:flex-row lg:items-end">
@@ -171,7 +194,7 @@
 
 
 
-    <section>
+    <section id="services">
         <div class="flex flex-col items-center lg:flex-row lg:justify-between lg:gap-56 mt-20 mb-10 lg:my-28">
             <span class="flex flex-col lg:flex-row lg:items-end w-full">
                 <h1 class="uppercase text-center font-montserrat text-white text-3xl"><span class="font-bold mb-1">WHY BUILD <br></span>WITH HYDRA?</h1>
@@ -268,7 +291,7 @@
 
 
 
-    <section>
+    <section id="tech">
         <div class="flex justify-center items-center rounded-full bg-[url('../assets/img/tech.png')] h-24 lg:h-48 bg-no-repeat bg-cover bg-center mt-12 mb-8 px-2 py-8 snap-start relative">
             <h1 class="uppercase text-center lg:text-2xl font-montserrat text-white space-y-5"><span class="font-bold mb-1">Technologies and Hardware <br></span>used by Hydra VR</h1>
             <div class="absolute -bottom-5 mx-auto z-10 hidden lg:flex items-center justify-center w-10 h-10 rounded-full bg-neutral-400 border-8 border-black border-opacity-60 animate-bounce">
@@ -301,7 +324,7 @@
 
         
 
-        <div class="block lg:flex flex-row justify-between gap-56 mb-7 lg:mb-28">
+        <div class="block lg:flex flex-row justify-between gap-56 mb-7 lg:mb-28" id="how">
             <span class="flex flex-row items-end w-full">
                 <h1 class="uppercase font-montserrat text-center text-white text-3xl"><span class="font-bold mb-1">How We Build </span>with Hydra VR?</h1>
 
@@ -403,7 +426,7 @@
 
 
 
-    <section>
+    <section id="contact">
         <div class="bg-gradient-to-b from-body-0 via-neutral-800 to-body-0 snap-start px-4 py-8 rounded-3xl mt-24 mb-12 shadow">
             <div class="flex flex-col items-center justify-items-center space-y-3">
                 <h2 class="font-bold tracking-wide font-montserrat text-white text-2xl">JOIN HYDRA</h2>
@@ -415,7 +438,7 @@
             <form action="" method="post">
                 <div class="flex flex-col space-y-4 font-montserrat mx-4 mt-12">
                     <span class="flex flex-col lg:flex-row justify-evenly gap-4">
-                        <input id="input" type="text" name="firstName" id="firstName" placeholder="First Name" class="w-full rounded-full bg-transparent border-2 border-white px-4 py-2 placeholder-white outline-none text-neutral-200" required autofocus autofill>
+                        <input id="input" type="text" name="firstName" id="firstName" placeholder="First Name" class="w-full rounded-full bg-transparent border-2 border-white px-4 py-2 placeholder-white outline-none text-neutral-200" required autofill>
                         <input id="input" type="text" name="lastName" id="lastName" placeholder="Last Name" class="w-full rounded-full bg-transparent border-2 border-white px-4 py-2 placeholder-white outline-none text-neutral-200 autofill">
                     </span>
                     
@@ -437,7 +460,7 @@
 
 
 
-    <section class="flex flex-col">
+    <section class="flex flex-col" id="join">
             
 
             <div class=" flex flex-col justify-center lg:flex-row lg:justify-evenly lg:gap-24 lg:align-middle overflow-y-hidden items-center relative">
